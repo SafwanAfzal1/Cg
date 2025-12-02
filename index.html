@@ -169,33 +169,6 @@
       gap: .5rem;
     }
 
-    /* --- Google Translate Custom Styling --- */
-    #google_translate_element {
-        margin-right: 8px;
-        min-width: 100px;
-    }
-    .goog-te-banner-frame { display: none !important; }
-    body { top: 0px !important; }
-    
-    .goog-te-gadget {
-        font-family: var(--font-body) !important;
-        font-size: 0 !important;
-        color: transparent !important;
-    }
-    .goog-te-gadget .goog-te-combo {
-        margin: 0 !important;
-        padding: 4px 8px;
-        border-radius: var(--radius-sm);
-        border: 1px solid var(--border-alt);
-        background: var(--bg-alt);
-        color: var(--text);
-        font-size: 12px;
-        font-family: var(--font-body);
-        outline: none;
-        cursor: pointer;
-        height: 32px;
-    }
-
     .theme-toggle {
       width: 36px;
       height: 36px;
@@ -663,9 +636,6 @@
       </div>
 
       <nav class="main-nav" aria-label="Primary">
-        <!-- Google Translate Widget (All Languages) -->
-        <div id="google_translate_element"></div>
-
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
           <span class="icon" aria-hidden="true">
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -903,19 +873,6 @@
   <footer>
     © <span id="year"></span> CgInvite. All rights reserved.
   </footer>
-
-  <!-- Google Translate Script (All Languages Enabled by Default) -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      // 'includedLanguages' is removed to support ALL languages
-      new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-      }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script>
     // NAVIGATION LOGIC (Single Page App)
